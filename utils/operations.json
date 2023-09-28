@@ -22,7 +22,7 @@
       "amount": "8221.37",
       "currency": {
         "name": "USD",
-        "code": "USD"
+        "code ": "USD"
       }
     },
     "description": "Перевод организации",

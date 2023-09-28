@@ -8,6 +8,6 @@ def test_account_num_mask():
 
 
 def test_card_num_mask():
-    number_from = '1246377376343588'
-    result_from = '1246 37******3588'
+    number_from = '1246377376343587'
+    result_from = '1246 37******3587'
     assert card_num_mask(number_from) == result_from
