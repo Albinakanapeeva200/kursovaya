@@ -10,6 +10,7 @@ with open(file_dict, 'r', encoding='utf-8') as file:
 
 
 def operation_output():
+    """функция вывода операций"""
     sort_operations_state = [sort_operations_state for sort_operations_state in file_ if sort_operations_state.get('state') == 'EXECUTED']
     sort_operations_date = sort_operations_state.sort(key=lambda x: x.get('date'), reverse=True)
     for i in sort_operations_state[:5]:

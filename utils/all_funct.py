@@ -8,10 +8,12 @@ with open(file_dict, 'r', encoding='utf-8') as file:
 
     
 def account_num_mask(number_to):
+    """функция маскирует номер счета"""
     account_num_masked = '*' * len(number_to[-6:-4]) + number_to[-4:]
     return account_num_masked
 
 
 def card_num_mask(number_from):
+    """функция маскирует номер карты"""
     card_num_masked = number_from[0:4] + ' ' + number_from[4:6] + '*' * len(number_from[6:-4]) + number_from[-4:]
     return card_num_masked
