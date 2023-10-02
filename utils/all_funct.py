@@ -37,7 +37,7 @@ def account_num_mask(number_to):
 
 def card_num_mask(number_from):
     """ функция маскирует номер карты"""
-    card_num_masked = number_from[0:4] + ' ' + number_from[4:6] + '*' * len(number_from[6:-4]) + number_from[-4:]
+    card_num_masked = number_from[:4] + ' ' + number_from[4:6] + '*' * len(number_from[-10:-4]) + number_from[-4:]
     return card_num_masked
 
 
