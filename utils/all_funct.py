@@ -52,6 +52,14 @@ def get_valid_operation_obj(sort_operations):
             number_to = card[-1]
             num_to = account_num_mask(number_to)
             print(f" > {' '.join(card[:-1])} {num_to}")
+        elif 'Счет' in i['from']:
+            card = i['to'].split()
+            number_to = card[-1]
+            num_to = account_num_mask(number_to)
+            card_ = i['from'].split()
+            number_from = card_[-1]
+            num_from = account_num_mask(number_from)
+            print(f"{' '.join(card_[:-1])} {num_from} -> {' '.join(card[:-1])} {num_to}")
         else:
             card = i['to'].split()
             number_to = card[-1]
